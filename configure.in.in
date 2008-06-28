@@ -128,12 +128,6 @@ AssemblyInfo.cs
 Makefile
 policy.config
 sources/Makefile
-parser/Makefile
-parser/gapi-2.0.pc
-parser/gapi2-fixup
-parser/gapi2-parser
-generator/Makefile
-generator/gapi2-codegen
 telepathy-glib/Makefile
 telepathy-glib/telepathy-glib-sharp-1.0.pc
 telepathy-glib/telepathy-glib-sharp.dll.config
