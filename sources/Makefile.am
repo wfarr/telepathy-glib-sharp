@@ -13,4 +13,4 @@ api-0.7.10:
 get-source-code: get-0.7.10-sources
 
 get-0.7.10-sources:
-	wget $(TELEPATHY_GLIB_0_7_10_DOWNLOAD) --output-document=- | tar -zx
+	curl -G $(TELEPATHY_GLIB_0_7_10_DOWNLOAD) | tar zx
