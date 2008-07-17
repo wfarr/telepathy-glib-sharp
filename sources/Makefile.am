@@ -13,7 +13,7 @@ TELEPATHY_GLIB_0_7_10_DOWNLOAD = \
 	http://telepathy.freedesktop.org/releases/telepathy-glib/telepathy-glib-0.7.10.tar.gz
 
 all: generated-stamp
-	$(compile-dll)
+
 api:
 	$(GAPIPAR) telepathy-glib-sharp-0.7.10-sources.xml
 
