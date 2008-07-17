@@ -1,4 +1,3 @@
-<!-- mode:xml -->
 <?xml version="1.0"?>
 <metadata>
   <attr path="/api/namespace/*/*/*/parameter[@name='ret']" name="name">retval</attr>
