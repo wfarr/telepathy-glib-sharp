@@ -1,5 +1,5 @@
 <gapi-parser-input>
-  <api filename="telepathy-glib-api-0.7.10.raw">
+  <api filename="telepathy-glib-sharp-api-0.7.10.raw">
     <library name="telepathy-glib-1.0-0.dll">
       <namespace name="TelepathyGlib">
         <dir>telepathy-glib-0.7.10/telepathy-glib</dir>
