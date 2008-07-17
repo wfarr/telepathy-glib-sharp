@@ -41,7 +41,7 @@ PKG_CHECK_MODULES(BASE_DEPENDENCIES,
                   mono >= $MONO_REQUIRED_VERSION)
 
 PKG_CHECK_MODULES(TELEPATHY_GLIB_SHARP,
-                  gtk-sharp-2.0 >= $GTKSHARP_REQUIRED_VERSION,
+                  gtk-sharp-2.0 >= $GTKSHARP_REQUIRED_VERSION
                   telepathy-glib >= $TELEPATHY_GLIB_REQUIRED_VERSION)
 
 AC_CONFIG_FILES([
