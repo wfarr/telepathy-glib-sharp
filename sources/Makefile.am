@@ -12,9 +12,9 @@ EXTRA_DIST =   \
 TELEPATHY_GLIB_0_7_10_DOWNLOAD = \
 	http://telepathy.freedesktop.org/releases/telepathy-glib/telepathy-glib-0.7.10.tar.gz
 
-all: generated-stamp
+all: compile-dll
 
-api:
+api: get-source-code
 	$(GAPIPAR) telepathy-glib-sharp-0.7.10-sources.xml
 
 $(API): api
