@@ -1,5 +1,5 @@
-RAW_API=$(ASSEMBLY_NAME)-api.raw
-API=$(ASSEMBLY_NAME)-api.xml
+RAW_API=$(ASSEMBLY_NAME)-api-0.7.10.raw
+API=$(ASSEMBLY_NAME)-api-0.7.10.xml
 METADATA=$(ASSEMBLY_NAME).metadata
 
 build_sources = AssemblyInfo.cs
