@@ -47,9 +47,6 @@ PKG_CHECK_MODULES(TELEPATHY_GLIB_SHARP,
 AC_CONFIG_FILES([
 Makefile
 sources/Makefile
-telepathy-glib/Makefile
-telepathy-glib/telepathy-glib-sharp-1.0.pc
-telepathy-glib/telepathy-glib-sharp.dll.config
 ])
 
 AC_OUTPUT
