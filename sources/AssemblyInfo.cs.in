@@ -6,5 +6,3 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyCompany("@ASSEMBLY_COMPANY@")]
 [assembly: AssemblyCopyright("@ASSEMBLY_COPYRIGHT@")]
 [assembly: AssemblyVersion("@ASSEMBLY_VERSION@")]
-[assembly: AssemblyDelaySign(false)]
-[assembly: AssemblyKeyFile("@ASSEMBLY_NAME@.snk")]
