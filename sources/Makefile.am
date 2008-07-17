@@ -1,3 +1,5 @@
+CSC=$(MCS)
+
 RAW_API=$(ASSEMBLY_NAME)-api-0.7.10.raw
 API=$(ASSEMBLY_NAME)-api-0.7.10.xml
 METADATA=$(ASSEMBLY_NAME).metadata
@@ -10,7 +12,7 @@ EXTRA_DIST =   \
 TELEPATHY_GLIB_0_7_10_DOWNLOAD = \
 	http://telepathy.freedesktop.org/releases/telepathy-glib/telepathy-glib-0.7.10.tar.gz
 
-all: generated-stamp $(ASSEMBLY)
+all: generated-stamp $(ASSEMBLY_NAME).dll
 
 api:
 	$(GAPIPAR) telepathy-glib-sharp-0.7.10-sources.xml
