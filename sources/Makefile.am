@@ -12,12 +12,12 @@ EXTRA_DIST =   \
 TELEPATHY_GLIB_0_7_10_DOWNLOAD = \
 	http://telepathy.freedesktop.org/releases/telepathy-glib/telepathy-glib-0.7.10.tar.gz
 
-all: generated-stamp $(ASSEMBLY_NAME).dll
-
+all: generated-stamp
+	$(compile-dll)
 api:
 	$(GAPIPAR) telepathy-glib-sharp-0.7.10-sources.xml
 
-$(API):
+$(API): api
 	cp $(RAW_API) $(API)
 	chmod u+w $(API)
 	$(GAPIFIX) --api=$(API) --metadata=$(METADATA)
@@ -30,6 +30,6 @@ generated-stamp: $(API)
 	--outdir=generated --customdir=../sources \
 	--assembly-name=$(ASSEMBLY_NAME) && touch generated-stamp
 
-$(ASSEMBLY_NAME).dll: $(build_sources) generated-stamp
-	$(CSC) -nowarn:169 -unsafe -target:library \
+compile-dll: $(build_sources) generated-stamp
+	$(CSC) -pkg:glib-sharp-2.0 -nowarn:169 -unsafe -target:library \
 	$(build_sources) generated/*.cs -out:$(ASSEMBLY_NAME).dll
