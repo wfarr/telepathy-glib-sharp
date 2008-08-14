@@ -3,4 +3,5 @@
   <attr path="/api/namespace" name="name">Telepathy</attr>
   <attr path="/api/namespace/struct/field[@type='GCallback']" name="type">gpointer</attr>
   <attr path="/api/namespace/*/*/*/parameter[@name='ret']" name="name">retval</attr>
+  <attr path="/api/namespace/*/*/parameter[@name='ret']" name="name">retval</attr>
 </metadata>
