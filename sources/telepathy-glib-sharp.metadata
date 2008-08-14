@@ -3,4 +3,6 @@
   <attr path="/api/namespace" name="name">Telepathy</attr>
   <attr path="/api/namespace/struct/field[@type='GCallback']" name="type">gpointer</attr>
   <attr path="//parameter[@name='ret']" name="name">retval</attr>
+  <attr path="/api/namespace/enum/member[@cname='TP_DBUS_NAME_TYPE_NOT_DBUS_DAEMON']" name="value">Unique | WellKnown</attr>
+  <attr path="/api/namespace/enum/member[@cname='TP_DBUS_NAME_TYPE_ANY']" name="value">NotBusDaemon | BusDaemon</attr>
 </metadata>
