@@ -5,4 +5,5 @@
   <attr path="//parameter[@name='ret']" name="name">retval</attr>
   <attr path="/api/namespace/enum[@name='DBusNameType']/member[@name='NotBusDaemon']" name="value">Unique | WellKnown</attr>
   <attr path="/api/namespace/enum[@name='DBusNameType']/member[@name='Any']" name="value">NotBusDaemon | BusDaemon</attr>
+  <remove-node path="/api/namespace/callback[@name='BaseConnectionCreateHandleReposImpl]'" />
 </metadata>
