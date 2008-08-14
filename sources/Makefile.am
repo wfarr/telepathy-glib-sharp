@@ -17,7 +17,7 @@ all: compile-dll
 api: get-source-code
 	$(GAPIPAR) telepathy-glib-sharp-0.7.10-sources.xml
 
-$(API): api
+$(API):
 	cp $(RAW_API) $(API)
 	chmod u+w $(API)
 	$(GAPIFIX) --api=$(API) --metadata=$(METADATA)
